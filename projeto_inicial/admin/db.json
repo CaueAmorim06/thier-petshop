@@ -1,0 +1,24 @@
+{
+  "profile": [
+    {
+      "nome": "Thier",
+      "email": "thier@senai.com.br",
+      "id": 1
+    },
+    {
+      "nome": "Lucas",
+      "email": "lucas@gmail.com",
+      "id": 5
+    },
+    {
+      "nome": "Amanda",
+      "email": "amanda@gmail.com",
+      "id": 6
+    },
+    {
+      "nome": "Laura",
+      "email": "laura@gmail.com",
+      "id": 7
+    }
+  ]
+}
