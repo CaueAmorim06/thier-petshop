@@ -23,3 +23,20 @@ formulario.addEventListener('submit', (evento) => {
             window.location.href ='../telas/cadastro_concluido.html'
         })
 })
+
+formulario.addEventListener('submit', (evento) => {    
+    
+    evento.preventDefault()    
+
+   // Recupera o valor inserido no campo com o atributo [data-email].
+   const preco = evento.target.querySelector('[data-preco]').value
+
+   const descricao = evento.target.querySelector('[data-descricao]').value
+
+   // Usa o serviço clienteService para criar um novo cliente com os valores obtidos.
+   clienteService.criarClientes(nome, preco, descricao)
+    .then(() => {
+        // Depois de criar o cliente com sucesso, redireciona o usuário para a tela 'cadastro_concluido.html'.
+        window.location.href ='../telas/cadastro_concluido.html'
+    })
+})
